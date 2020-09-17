@@ -1,0 +1,42 @@
+<div class="mx-auto col-md-8 mb-1 mt-1">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-tittle">Busqueda Estudiante Por</h5>
+      <form>
+        <div class="row">
+          <div class="col">
+            <input
+            maxlength="8"
+              type="text"
+              class="form-control busqueda"
+              placeholder="Dni"
+            />
+          </div>
+          o
+          <div class="col">
+            <input
+            maxlength="8"
+              type="text"
+              class="form-control busqueda"
+              placeholder="Usuario"
+            />
+          </div>
+          y
+          <div class="col-md-3">
+            <select class="form-control" id="estadoUser">
+                <option value="1">Activo</option>
+                <option value="0">Inactivado</option>
+              </select>
+        </div>
+          <div class="col">
+            <input
+              type="button"
+              class="form-control bg-info text-white"
+              value="Buscar"
+              id="btnbuscar"
+            />
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

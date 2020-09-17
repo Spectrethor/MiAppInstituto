@@ -1,0 +1,123 @@
+<!-- Modal -->
+<div class="modal fade registrarModal">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Registro de Pago</h4>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-hidden="true"
+        >
+          &times;
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="frm_registrarProgramacion">
+          <div class="form-row">
+            <div class="form-group col-md-2">
+              <label for="codigo">Codigo de Inscripcion</label>
+              <input type="text" class="form-control validar" id="codigo" />
+            </div>
+            <div class="form-group col-md-2">
+              <label for="usuariopago">Usuario</label>
+              <input
+                type="text"
+                class="form-control validar"
+                id="usuariopago"
+              />
+            </div>
+            <div class="form-group col-md-3">
+              <label for="apellidopago">Apellidos</label>
+              <input
+                type="text"
+                class="form-control validar"
+                id="apellidopago"
+              />
+            </div>
+            <div class="form-group col-md-3">
+              <label for="nombrepago">Nombres</label>
+              <input type="text" class="form-control validar" id="nombrepago" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-3">
+              <label for="carrerapago">Carreras</label>
+              <input
+                type="text"
+                class="form-control validar"
+                id="carrerapago"
+              />
+            </div>
+            <div class="form-group col-md-3">
+              <label for="cursosRegistro">Cursos</label>
+              <input type="text" class="form-control validar" />
+            </div>
+            <div class="form-group col-md-3">
+              <label for="horariospagos">Horario</label>
+              <input
+                type="text"
+                class="form-control validar"
+                id="horariospagos"
+              />
+            </div>
+            <div class="form-group col-md-3">
+              <label for="frecuenciapago">Frecuencia</label>
+              <input
+                type="text"
+                class="form-control validar"
+                id="frecuenciapago"
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-3">
+              <label for="fechaIniciopago">Fecha Inicio</label>
+              <input
+                type="text"
+                class="form-control validar"
+                id="fechaInicioRegistro"
+              />
+            </div>
+            <div class="form-group col-md-3">
+              <label for="fechaFinRegistro">Fecha Fin</label>
+              <input
+                type="text"
+                class="form-control validar"
+                id="fechaFinRegistro"
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-3">
+              <label for="fechaFinRegistro">Total</label>
+              <input type="text" class="form-control validar" id="total" />
+            </div>
+          </div>
+          <div class="form-row botones">
+            <div class="col-md-2"></div>
+            <div class="form-group mx-auto col-md-4">
+              <button type="submit" class="btn btn-info btn-block">
+                Registrar Pago
+              </button>
+            </div>
+            <div class="form-group mx-auto col-md-4">
+              <button
+                type="button"
+                class="btn btn-danger btn-block"
+                id="cancel"
+                data-dismiss="modal"
+                aria-hidden="true"
+                value="Cancelar"
+              >
+                Cancelar
+              </button>
+            </div>
+            <div class="col-md-2"></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

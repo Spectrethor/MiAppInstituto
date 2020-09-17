@@ -1,0 +1,33 @@
+<div class="mx-auto col-md-8 mb-1 mt-1">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-tittle">Busqueda de Inscripciones </h5>
+      <form id="FrmfiltroPagos">
+        <div class="row">
+          <div class="col">
+            <input
+              type="text"
+              maxlength="8"
+              class="form-control busqueda"
+              id="usuario"
+              placeholder="Usuario"
+            />
+          </div>
+          <div class="col-md-3">
+            <select class="form-control busqueda" id="estado">
+                <option value="0">Pendiente</option>
+                <option value="1">Cancelado</option>
+              </select>
+        </div>
+          <div class="col">
+            <input
+              type="button"
+              class="form-control bg-info text-white"
+              value="Buscar"
+              id="btnbuscar"
+            />
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

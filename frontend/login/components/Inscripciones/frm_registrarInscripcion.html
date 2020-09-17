@@ -1,0 +1,185 @@
+<div class="col-md-12 mx-auto">
+  <div class="card">
+    <div class="card-body">
+      <h4 class="card-title">Nueva Inscripción</h4>
+      <form id="frm_registrarInscripcion" autocomplete="off">
+        <div class="form-row">
+          <div class="form-group col-md-3">
+            <input
+              type="text"
+              maxlength="8"
+              class="form-control busqueda"
+              placeholder="Nro Reserva"
+            />
+          </div>
+          o
+          <div class="form-group col-md-3">
+            <input
+              maxlength="8"
+              type="text"
+              class="form-control busqueda"
+              placeholder="Usuario de Estudiante"
+            />
+          </div>
+          <div class="form-group col-md-3">
+            <input
+              type="button"
+              class="form-control bg-info text-white"
+              value="Buscar"
+              id="btnbuscar"
+            />
+          </div>
+        </div>
+        <!--Informacion del estudiante obtneida por usuario o reserva-->
+        <div class="form-row">
+          <div class="form-group col-md-4">
+            <label for="dni">Dni</label>
+            <input type="text" class="form-control validarInput" id="dni" />
+          </div>
+          <div class="form-group col-md-4">
+            <label for="nombres">Nombres</label>
+            <input type="text" class="form-control validarInput" id="nombres" />
+          </div>
+          <div class="form-group col-md-4">
+            <label for="apellidos">Apellidos</label>
+            <input
+              type="text"
+              class="form-control validarInput"
+              id="apellidos"
+            />
+          </div>
+        </div>
+        <!--Informacion de la programacion obtenida reserva-->
+        <div class="form-row">
+          <div class="form-group col-md-3">
+            <input
+              id="anio"
+              type="text"
+              maxlength="8"
+              value="2020"
+              class="form-control filtro"
+              placeholder="Año"
+            />
+          </div>
+
+          <div class="form-group col-md-3">
+            <input
+              type="text"
+              class="form-control filtro"
+              value="Septiembre"
+              id="mes"
+              placeholder="mes"
+            />
+          </div>
+          <div class="form-group col-md-3">
+            <input
+              type="button"
+              class="form-control bg-info text-white btnfiltrar"
+              value="Filtrar Programación"
+              data-toggle="modal"
+              data-target=".filtradoModal"
+              id="btnbuscarprograma"
+            />
+          </div>
+          <div class="tblFiltroProgramacion"></div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group col-md-2">
+            <label for="turnoRegistro">Turno</label>
+            <input
+              type="text"
+              class="form-control programa"
+              id="turnoRegistro"
+            />
+          </div>
+          <div class="form-group col-md-3">
+            <label for="carreraRegistro">Carrera</label>
+            <input
+              type="text"
+              class="form-control programa"
+              id="carreraRegistro"
+            />
+          </div>
+          <div class="form-group col-md-2">
+            <label for="modulosRegistro">Modulos</label>
+            <input
+              type="text"
+              class="form-control programa"
+              id="modulosRegistro"
+            />
+          </div>
+          <div class="form-group col-md-2">
+            <label for="cursosRegistro">Cursos</label>
+            <input
+              type="text"
+              class="form-control programa"
+              id="cursosRegistro"
+            />
+          </div>
+          <div class="form-group col-md-3">
+            <label for="frecuenciaRegistro">Frecuencia</label>
+            <input
+              type="text"
+              class="form-control programa"
+              id="frecuenciaRegistro"
+            />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-2">
+            <label for="fechaInicioRegistro">Fecha Inicio</label>
+            <input
+              type="text"
+              class="form-control programa"
+              id="fechaInicioRegistro"
+            />
+          </div>
+          <div class="form-group col-md-2">
+            <label for="fechaFinRegistro">Fecha Fin</label>
+            <input
+              type="text"
+              class="form-control programa"
+              id="fechaFinRegistro"
+            />
+          </div>
+          <div class="form-group col-md-2">
+            <label for="horarioRegistro">Horario</label>
+            <input
+              type="text"
+              class="form-control programa"
+              id="horarioRegistro"
+            />
+          </div>
+          <div class="form-group col-md-3">
+            <label for="aulaRegistro">Aula o Laboratorio</label>
+            <input
+              type="text"
+              class="form-control programa"
+              id="aulaRegistro"
+            />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-2"></div>
+          <div class="form-group mx-auto col-md-4">
+            <button type="submit" class="btn btn-info btn-block">
+              Inscribir
+            </button>
+          </div>
+          <div class="form-group mx-auto col-md-4">
+            <button
+              type="button"
+              class="btn btn-danger btn-block"
+              id="cancel"
+              value="Cancelar"
+            >
+              Cancelar
+            </button>
+          </div>
+          <div class="col-md-2"></div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

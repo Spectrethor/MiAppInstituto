@@ -1,0 +1,133 @@
+<!-- Modal -->
+<div class="modal fade registrarModal">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Nueva Programación</h4>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-hidden="true"
+        >
+          &times;
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="frm_registrarProgramacion">
+          <div class="form-row">
+            <div class="form-group col-md-1">
+              <label for="anio">Año</label>
+              <input
+                type="text"
+                class="form-control validarInput"
+                maxlength="8"
+                value="2020"
+                id="anioRegistro"
+              />
+            </div>
+            <div class="form-group col-md-2">
+              <label for="mesResgistro">Mes</label>
+              <input
+                type="text"
+                class="form-control validarInput"
+                id="mesResgistro"
+              />
+            </div>
+            <div class="form-group col-md-3">
+              <label for="carreraRegistro">Carrera</label>
+              <select
+                id="carreraRegistro"
+                class="form-control filtrocurso"
+              ></select>
+            </div>
+            <div class="form-group col-md-3">
+              <label for="modulosRegistro">Modulos</label>
+              <select
+                id="modulosRegistro"
+                class="form-control filtrocurso"
+              ></select>
+            </div>
+            <div class="form-group col-md-3">
+              <label for="cursosRegistro">Cursos</label>
+              <select id="cursosRegistro" class="form-control"></select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <label for="profesorRegistro">Profesores</label>
+              <select id="profesorRegistro" class="form-control"></select>
+            </div>
+            <div class="form-group col-md-4">
+              <label for="turnoRegistro">Turno</label>
+              <select id="turnoRegistro" class="form-control"></select>
+            </div>
+            <div class="form-group col-md-4">
+              <label for="frecuenciaRegistro">Frecuencia</label>
+              <input
+                type="text"
+                class="form-control validarInput"
+                id="frecuenciaRegistro"
+                name="telefono"
+                placeholder="e.g Lunes-Miercoles-Viernes"
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-3">
+              <label for="fechaInicioRegistro">Fecha Inicio</label>
+              <input
+                type="date"
+                class="form-control validarInput"
+                id="fechaInicioRegistro"
+                placeholder="e.j 4:00 pm – 6:00 pm "
+              />
+            </div>
+            <div class="form-group col-md-3">
+              <label for="fechaFinRegistro">Fecha Fin</label>
+              <input
+                type="date"
+                class="form-control validarInput"
+                id="fechaFinRegistro"
+              />
+            </div>
+            <div class="form-group col-md-3">
+              <label for="horarioRegistro">Horario</label>
+              <input
+                type="text"
+                class="form-control validarInput"
+                id="horarioRegistro"
+                placeholder="e.j 4:00 pm - 6:00pm"
+              />
+            </div>
+            <div class="form-group col-md-3">
+              <label for="aulaRegistro">Aula o Laboratorio</label>
+              <select class="form-control" id="aulaRegistro"></select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-md-2"></div>
+            <div class="form-group mx-auto col-md-4">
+              <button type="submit" class="btn btn-info btn-block">
+                Crear Programación
+              </button>
+            </div>
+            <div class="form-group mx-auto col-md-4">
+              <button
+                type="button"
+                class="btn btn-danger btn-block"
+                id="cancel"
+                data-dismiss="modal"
+                aria-hidden="true"
+                value="Cancelar"
+              >
+                Cancelar
+              </button>
+            </div>
+            <div class="col-md-2"></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

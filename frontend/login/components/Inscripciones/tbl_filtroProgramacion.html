@@ -1,0 +1,64 @@
+<!-- Modal -->
+<div class="modal fade filtradoModal">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Filtra Programación</h4>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-hidden="true"
+        >
+          &times;
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="row">
+            <div class="col">
+              <select class="form-control programafiltro"></select>
+            </div>
+            o
+            <div class="col">
+              <select class="form-control programafiltro"></select>
+            </div>
+            <div class="col">
+              <input
+                type="button"
+                class="form-control bg-info text-white"
+                value="Buscar"
+                id="btnbuscar"
+              />
+            </div>
+          </div>
+        </form>
+        <div class="table-responsive mt-5">
+          <table
+            class="table table-md table-dark table-bordered"
+            id="tb_personal"
+          >
+            <thead>
+              <tr>
+                <th>Nroº</th>
+                <th>Año</th>
+                <th>Mes</th>
+                <th>Turno</th>
+                <th>Carrera</th>
+                <th>Modulo</th>
+                <th>Curso</th>
+                <th>Frecuencia</th>
+                <th>Fecha Inicio</th>
+                <th>Fecha Final</th>
+                <th>Horario</th>
+                <th>Aula</th>
+              </tr>
+            </thead>
+            <tbody id="cuerpo_listado"></tbody>
+          </table>
+          <div id="frm_actualizaProgramacion"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

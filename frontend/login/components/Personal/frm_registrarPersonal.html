@@ -1,0 +1,158 @@
+<!-- Modal -->
+<div class="modal fade registrarModal">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Registrar Personal</h4>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-hidden="true"
+        >
+          &times;
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="frm_registrarPersonal">
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <label for="doc_identidadRegistro">Doc. indentidad</label>
+              <input
+                type="text"
+                class="form-control validarRegistro"
+                maxlength="8"
+                id="doc_identidadRegistro"
+                name="doc_identidadRegistro"
+              />
+            </div>
+            <div class="form-group col-md-4">
+              <label for="nombresRegistro">Nombres</label>
+              <input
+                type="text"
+                class="form-control validarRegistro"
+                id="nombresRegistro"
+                name="nombresRegistro"
+              />
+            </div>
+            <div class="form-group col-md-4">
+              <label for="apellidosRegistro">Apellidos</label>
+              <input
+                type="text"
+                class="form-control validarRegistro"
+                id="apellidosRegistro"
+                name="apellidosRegistro"
+              />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-2">
+              <label>Sexos</label>
+              <div class="radio">
+                <label
+                  ><input
+                    type="radio"
+                    value="M"
+                    checked
+                    name="sexoRegistro"
+                    class="sexoRegistro"
+                  />Masculino</label
+                >
+              </div>
+              <div class="radio">
+                <label
+                  ><input
+                    type="radio"
+                    value="F"
+                    class="sexoRegistro"
+                    name="sexoRegistro"
+                  />Femenino</label
+                >
+              </div>
+            </div>
+            <div class="form-group col-md-3">
+              <label for="fecha_nacRegistro">Fecha de Nacimiento</label>
+              <input
+                type="date"
+                class="form-control validarRegistro"
+                id="fecha_nacRegistro"
+                name="fecha_nacRegistro"
+              />
+            </div>
+            <div class="form-group col-md-4">
+              <label for="domicilioRegistro">Domicilio</label>
+              <input
+                type="text"
+                class="form-control validarRegistro"
+                id="domicilioRegistro"
+                name="domicilioRegistro"
+              />
+            </div>
+            <div class="form-group col-md-3">
+              <label for="estado_civilRegistro">Estado civil</label>
+              <select class="form-control" id="estado_civilRegistro">
+                <option value="EC001">Soltero</option>
+                <option value="EC002">Comprometido/a</option>
+                <option value="EC003">Divorciado/a</option>
+                <option value="EC005">Casado/a</option>
+                <option value="EC006">Viudo/a</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-4">
+              <label for="telefonoRegistro">Telefono</label>
+              <input
+                type="text"
+                class="form-control validarRegistro"
+                maxlength="9"
+                id="telefonoRegistro"
+                name="telefono"
+              />
+            </div>
+            <div class="form-group col-md-4">
+              <label for="correo_electronicoRegistro">Correo Electrónico</label>
+              <input
+                type="email"
+                class="form-control validarRegistro"
+                id="correo_electronicoRegistro"
+                name="correo_electronicoRegistro"
+              />
+            </div>
+            <div class="form-group col-md-4">
+              <label for="cod_rol">Rol</label>
+              <select class="form-control" id="cod_rol">
+                <option value="1">Administración</option>
+                <option value="2">Docente</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group mx-auto col-md-4">
+              <button
+                type="submit"
+                class="btn btn-info btn-block"
+                value="Registrar"
+              >
+                Registrar
+              </button>
+            </div>
+            <div class="form-group mx-auto col-md-4">
+              <button
+                type="button"
+                class="btn btn-danger btn-block"
+                id="cancel"
+                data-dismiss="modal"
+                aria-hidden="true"
+                value="Cancelar"
+              >
+                Cancelar
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
